@@ -1,5 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
 
 public class ContainsDuplicates{
 	public static void main(String[] args){
@@ -8,7 +7,7 @@ public class ContainsDuplicates{
 	}
 
 	public static boolean hasDuplicate(int[] numbers){
-		List<Integer> numberSeen = new ArrayList<>();
+		HashSet<Integer> numberSeen = new HashSet<>();
 		for(int number: numbers){
 			if( numberSeen.contains(number)){
 				return true;
